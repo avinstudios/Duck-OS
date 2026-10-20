@@ -1,6 +1,6 @@
 # Duck OS 🦆
 
-A lightweight, browser-based desktop experience built with HTML, CSS, and JavaScript.
+A lightweight, browser-based desktop environment built with HTML, CSS, and JavaScript.
 
 ## Features
 
@@ -13,7 +13,7 @@ A lightweight, browser-based desktop experience built with HTML, CSS, and JavaSc
 
 ## Run it
 
-Open `index.html` in a modern browser, or enable GitHub Pages in the repository settings to host it as a static site. No build step or package installation is required.
+Open `index.html` in a modern browser, or enable GitHub Pages in the repository settings to host Duck OS as a static website. No build step or package installation is required.
 
 ## Icon credit
 
@@ -21,8 +21,8 @@ The Duck OS icon and favicon at `assets/icon/iconandfavicon.png` were provided b
 
 ## Inspiration
 
-The project is inspired by the idea of a web-based desktop interface and references [VUS by Cra-Z-Gaming](https://github.com/Cra-Z-Gaming/VUS).
+Duck OS is inspired by web-based desktop interfaces, including [VUS by Cra-Z-Gaming](https://github.com/Cra-Z-Gaming/VUS).
 
-## Note
+## Notes
 
-Duck OS is a browser-based UI demo, not a bootable operating system. Notes and preferences are stored in the current browser only.
+Duck OS is designed to run in a web browser. Notes and personalization preferences are stored in the current browser.
