@@ -1,58 +1,19 @@
 # Duck OS 🦆
 
-Duck OS is a browser-based desktop environment with a Windows 10-inspired interface, a Start menu, taskbar, startup screen, File Explorer, and an App Store for add-on apps.
+Duck OS is a browser-based desktop environment with a Windows 10-inspired interface, a Start menu, taskbar, startup screen, and File Explorer.
 
 ## Features
 
 - Windows-inspired desktop, wallpaper, Start menu, taskbar, clock, and startup animation
 - App windows with minimize, maximize, close, and drag controls
 - File Explorer with browser-local folders and editable text files
-- App Store that loads apps from `assets/appstore/apps.json`
 - Notepad, Calculator, web browser launcher, and personalization settings
-- Preferences, installed-app list, notes, and workspace saved in browser local storage
+- Preferences, notes, and workspace saved in browser local storage
 - Custom icon and favicon at `assets/icon/iconandfavicon.png`
 
 ## Run Duck OS
 
-Open `index.html` through a local web server or GitHub Pages. The App Store loads its catalogue with `fetch()`, so it needs an HTTP(S) origin; opening the HTML directly as a `file://` URL may prevent the catalogue from loading.
-
-## Add apps to the App Store
-
-Create a folder for each app inside `assets/appstore/`. Each app folder should contain its HTML entry point and an `app.json` metadata file. Then register the app in `assets/appstore/apps.json` (the catalogue file).
-
-Example layout:
-
-```text
-assets/
-├── icon/
-│   └── iconandfavicon.png
-└── appstore/
-    ├── apps.json
-    └── weather/
-        ├── app.json
-        └── index.html
-```
-
-Example `assets/appstore/apps.json`:
-
-```json
-{
-  "apps": [
-    {
-      "id": "weather",
-      "name": "Duck Weather",
-      "icon": "🌦️",
-      "description": "A simple weather app for Duck OS.",
-      "category": "Utilities",
-      "entry": "assets/appstore/weather/index.html"
-    }
-  ]
-}
-```
-
-The App Store reads each catalogue entry's `id`, `name`, `icon`, `description`, `category`, and `entry`. The `entry` must be a path inside `assets/appstore/`. The optional per-app `app.json` can hold the same metadata for your own organization; the current catalogue uses `apps.json` as its index because static GitHub Pages sites cannot automatically list directory contents.
-
-Apps launch in a sandboxed iframe inside a Duck OS window. Apps are static web files; the Store's installed state is saved in the current browser.
+Open `index.html` through a local web server or GitHub Pages.
 
 ## Custom files
 
